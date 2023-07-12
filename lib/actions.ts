@@ -27,9 +27,7 @@ export const createUser = (name: string, email: string, avatarUrl: string) => {
 
     const variables = {
         input: {
-            name: name,
-            email: email,
-            avatarUrl: avatarUrl
+            name, email, avatarUrl
         },
     };
 
