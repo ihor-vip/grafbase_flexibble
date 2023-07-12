@@ -8,7 +8,7 @@ import AuthProviders from "./AuthProviders";
 import Button from "./Button";
 
 const Navbar = async () => {
-    const session = await getCurrentUser()
+    const session = {};
 
     return (
         <nav className='flexBetween navbar'>
@@ -31,7 +31,7 @@ const Navbar = async () => {
             </div>
 
             <div className='flexCenter gap-4'>
-                {session?.user ? (
+                {session ? (
                     <>
                         <Link href="/create-project">
                             <Button title='Share work' />
